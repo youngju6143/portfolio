@@ -87,17 +87,10 @@ function App() {
           <spotLight position={[20, -10, 10]} color="red" angle={0.2} decay={0} penumbra={-1} intensity={20} />
           <CameraControls minDistance={150} maxDistance={150} />
         </Canvas>
-
-
-        {/* 스크롤을 위한 추가 콘텐츠 */}
         
         <Title />
-
-        {/* 스크롤 값에 따라 이름을 보여주는 컴포넌트 */}
         <Profile scrollY={scrollY} />
         <Test scrollY={scrollY} />
-        <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        </div>
       </S.Container>
     </>
   );
