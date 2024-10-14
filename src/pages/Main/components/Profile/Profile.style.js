@@ -16,7 +16,7 @@ export const Container = styled.div`
   background: rgba(255, 255, 255, 0.5);
 
   border-radius: 30px;
-  box-shadow: 10px 5px 5px #D9D9D9;
+  // box-shadow: 10px 5px 5px #D9D9D9;
 
 
 `
@@ -26,7 +26,7 @@ export const Title = styled.h1`
   // border: 1px solid black;
   font-size: 4.5rem;
   font-family: 'GumiRomanceTTF', sans-serif;
-
+  color: #fff;
 `
 export const Bottom = styled.div`
   width: 100%;
