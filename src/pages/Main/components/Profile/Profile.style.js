@@ -10,17 +10,15 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 4%;
-  opacity: ${(props) => (props.visible ? "1" : "0")};
   transition: opacity 0.5s ease-in-out;
 
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 
   border-radius: 30px;
-  // box-shadow: 10px 5px 5px #D9D9D9;
 `;
 export const Title = styled.h1`
   width: 95%;
-  margin-left: 5%;
+  margin: 8% 0 2% 5%;
   // border: 1px solid black;
   font-size: 4.5rem;
   font-family: "GumiRomanceTTF", sans-serif;
@@ -39,7 +37,7 @@ export const Profile = styled.img`
   object-fit: cover;
   width: 300px;
   // height: 50vh;
-  margin-left: 5%;
+  margin-left: 8%;
 `;
 
 export const Infos = styled.div`
@@ -48,27 +46,37 @@ export const Infos = styled.div`
   flex-direction: column;
   align-items: flex-start;
   // border: 1px solid black;
+
+  h1 {
+    font-family: "GumiRomanceTTF", sans-serif;
+    margin: 1% 0 1% 3%;
+    font-size: 2rem;
+    color: #ffc4c4;
+  }
+  section {
+    width: 100%;
+  }
 `;
 export const Info = styled.div`
-  margin-left: 10%;
+  margin-left: 5%;
   width: 90%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10%;
+  gap: 3%;
 
   h3 {
     font-family: "GumiRomanceTTF", sans-serif;
-    margin: 1% 0;
-    font-size: 2rem;
+    margin: 0.5% 0;
+    font-size: 1rem;
     text-align: center;
-    color: #ffb3b3;
+    color: #ffc4c4;
   }
 
   p {
     font-family: "NanumSquareRound", sans-serif;
-    margin: 0;
-    font-size: 1.5rem;
+    margin: 0.5% 0;
+    font-size: 1rem;
     color: #fff;
   }
 `;
