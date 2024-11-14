@@ -1,36 +1,58 @@
 import * as S from "./Profile.style";
 import profile from "../../../../assets/myProfile.webp";
 
-function Profile({ scrollY }) {
-  // 스크롤이 100 이상일 때 이름이 나타나도록 설정
-  const visible = scrollY > 100;
-
+function Profile() {
+  const portfolio = [
+    {
+      year: "2023",
+      infos: [
+        {
+          date: "03 - 12",
+          info: "경희대학교 컴퓨터공학부 학술동아리 N.E.T 교육부장",
+        },
+        { date: "09 - 02/2024", info: "UMC 5기 WEB 파트원" },
+      ],
+    },
+    {
+      year: "2024",
+      infos: [
+        {
+          date: "01 - 12",
+          info: "경희대학교 컴퓨터공학부 학술동아리 N.E.T 회장",
+        },
+        {
+          date: "10.05",
+          info: "예술적인 소프트웨어 웹/앱 분야 대상",
+        },
+        { date: "07 - 12", info: "경희대학교 KHUDA 6기 Member" },
+        {
+          date: "07 - 11",
+          info: "경희대학교 구름톤 유니브 3기 Front-End Member & 임원",
+        },
+        {
+          date: "09 - 09/2025",
+          info: "GDG on Campus: KHU 1기 Front-End Member",
+        },
+      ],
+    },
+  ];
   return (
-    <S.Container visible={visible}>
+    <S.Container>
       <S.Title>my PROFILE</S.Title>
       <S.Bottom>
         <S.Profile src={profile} alt="profile" />
         <S.Infos>
-          <S.Info>
-            <h3>Name</h3>
-            <p>장영주</p>
-          </S.Info>
-          <S.Info>
-            <h3>Birth</h3>
-            <p>2003.04.28</p>
-          </S.Info>
-          <S.Info>
-            <h3>Tel</h3>
-            <p>010-2370-6143</p>
-          </S.Info>
-          <S.Info>
-            <h3>Mail</h3>
-            <p>youngju6143@gmail.com</p>
-          </S.Info>
-          <S.Info>
-            <h3>Major</h3>
-            <p>경희대학교 컴퓨터공학과 재학</p>
-          </S.Info>
+          {portfolio.map((yearItem) => (
+            <section key={yearItem.year}>
+              <h1>{yearItem.year}</h1>
+              {yearItem.infos.map((infoItem, index) => (
+                <S.Info key={index}>
+                  <h3>{infoItem.date}</h3>
+                  <p>{infoItem.info}</p>
+                </S.Info>
+              ))}
+            </section>
+          ))}
         </S.Infos>
       </S.Bottom>
     </S.Container>
