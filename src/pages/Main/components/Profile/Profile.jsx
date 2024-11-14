@@ -1,5 +1,5 @@
-import * as S from './Profile.style'
-import profile from '../../../../assets/myProfile.webp'
+import * as S from "./Profile.style";
+import profile from "../../../../assets/myProfile.webp";
 
 function Profile({ scrollY }) {
   // 스크롤이 100 이상일 때 이름이 나타나도록 설정
@@ -9,7 +9,7 @@ function Profile({ scrollY }) {
     <S.Container visible={visible}>
       <S.Title>my PROFILE</S.Title>
       <S.Bottom>
-        <S.Profile src={profile} alt='profile'/>
+        <S.Profile src={profile} alt="profile" />
         <S.Infos>
           <S.Info>
             <h3>Name</h3>
