@@ -1,5 +1,5 @@
 import * as S from "./Profile.style";
-import profile from "../../../../assets/myProfile.webp";
+import profile from "../../../assets/myProfile.webp";
 
 function Profile() {
   const portfolio = [
@@ -40,7 +40,14 @@ function Profile() {
     <S.Container>
       <S.Title>my PROFILE</S.Title>
       <S.Bottom>
-        <S.Profile src={profile} alt="profile" />
+        <S.Profile>
+          <img src={profile} alt="profile" />
+          <h3>장영주</h3>
+          <p>
+            안녕하세요 꾸준히 성장하고 있는
+            <br /> 프론트엔드 개발자 장영주입니다 🍀
+          </p>
+        </S.Profile>
         <S.Infos>
           {portfolio.map((yearItem) => (
             <section key={yearItem.year}>

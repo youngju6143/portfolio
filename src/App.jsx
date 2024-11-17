@@ -1,26 +1,14 @@
 import { Canvas } from "@react-three/fiber";
 import { CameraControls } from "@react-three/drei";
 import * as S from "./App.style";
-import { useEffect, useState } from "react";
-import GlobalStyle from "./GlobalStyle"; // 경로는 실제 파일 위치에 맞게 조정
-import Title from "./pages/Main/components/Title/Title";
-import Profile from "./pages/Main/components/Profile/Profile";
-import Project from "./pages/Main/components/Project/Project";
-import Skill from "./pages/Main/components/Skill/Skill";
-import Background from "./pages/Main/components/Background/Background";
+import GlobalStyle from "./GlobalStyle";
+import Title from "./pages/components/Title/Title.jsx";
+import Profile from "./pages/components/Profile/Profile.jsx";
+import Project from "./pages/components/Project/Project.jsx";
+import Skill from "./pages/components/Skill/Skill.jsx";
+import Background from "./pages/components/Background/Background.jsx";
 
 function App() {
-  const [scrollY, setScrollY] = useState(0);
-
-  // 스크롤 이벤트 감지
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
       <GlobalStyle />

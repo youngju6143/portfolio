@@ -29,19 +29,45 @@ export const Bottom = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 4%;
   margin-top: 2%;
 `;
-export const Profile = styled.img`
-  object-fit: cover;
-  width: 300px;
-  // height: 50vh;
-  margin-left: 8%;
+export const Profile = styled.div`
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+
+  margin: 2% 0 0 10%;
+  gap: 2%;
+
+  img {
+    object-fit: cover;
+    width: 200px;
+  }
+  h3 {
+    font-family: "GumiRomanceTTF", sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffc4c4;
+  }
+
+  p {
+    font-family: "NanumSquareRound", sans-serif;
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+  }
 `;
 
 export const Infos = styled.div`
   width: 70%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -75,7 +101,7 @@ export const Info = styled.div`
 
   p {
     font-family: "NanumSquareRound", sans-serif;
-    margin: 0.5% 0;
+    margin: 0.5% 0 0 0;
     font-size: 1rem;
     color: #fff;
   }

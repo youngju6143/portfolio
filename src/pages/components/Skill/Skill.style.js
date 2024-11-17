@@ -19,12 +19,19 @@ export const SkillContainer = styled.div`
   border: 1px black solid;
 `;
 
-export const SkillIcon = styled.div`
+// export const SkillIcon = styled.div`
+//   width: 64px;
+//   height: 64px;
+//   border: 1px black solid;
+//   img {
+//     object-fit: cover;
+//     height: 100%;
+//   }
+// `;
+export const SkillIcon = styled.img`
   width: 64px;
   height: 64px;
-  border: 1px black solid;
-  img {
-    object-fit: cover;
-    height: 100%;
-  }
+  object-fit: cover;
+
+  cursor: pointer;
 `;
