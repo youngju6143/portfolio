@@ -16,18 +16,9 @@ export const SkillContainer = styled.div`
   gap: 4%;
   width: 50%;
   height: 20%;
-  border: 1px black solid;
+  // border: 1px black solid;
 `;
 
-// export const SkillIcon = styled.div`
-//   width: 64px;
-//   height: 64px;
-//   border: 1px black solid;
-//   img {
-//     object-fit: cover;
-//     height: 100%;
-//   }
-// `;
 export const SkillIcon = styled.img`
   width: 64px;
   height: 64px;
