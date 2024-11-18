@@ -15,21 +15,21 @@ import TailwindCSS from "../assets/SkillIcons/TailwindCSS.svg";
 import Vite from "../assets/SkillIcons/Vite.svg";
 
 const skillIcons = [
-  HTML,
-  CSS,
-  JavaScript,
-  React,
-  Vite,
-  Bootstrap,
-  Netlify,
-  Redux,
-  StyledComponents,
-  TailwindCSS,
-  CPP,
-  ExpressJS,
-  MongoDB,
-  NodeJS,
-  Python,
+  { path: HTML, name: "HTML" },
+  { path: CSS, name: "CSS" },
+  { path: JavaScript, name: "JavaScript" },
+  { path: React, name: "React" },
+  { path: Vite, name: "Vite" },
+  { path: Bootstrap, name: "Bootstrap" },
+  { path: Netlify, name: "Netlify" },
+  { path: Redux, name: "Redux" },
+  { path: StyledComponents, name: "Styled-Components" },
+  { path: TailwindCSS, name: "TailwindCSS" },
+  { path: CPP, name: "C++" },
+  { path: ExpressJS, name: "ExpressJS" },
+  { path: MongoDB, name: "MongoDB" },
+  { path: NodeJS, name: "NodeJS" },
+  { path: Python, name: "Python" },
 ];
 
 export default skillIcons;

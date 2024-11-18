@@ -12,13 +12,18 @@ function Skill() {
         {Array(Math.ceil(icons.length / 5))
           .fill(null)
           .map((_, groupIndex) => (
-            <T.SkillContainer key={groupIndex}>
+            <T.Container key={groupIndex}>
               {icons
                 .slice(groupIndex * 5, groupIndex * 5 + 5)
-                .map((iconPath, iconIndex) => (
-                  <T.SkillIcon key={iconIndex} src={iconPath} alt="SkillIcon" />
+                .map((icon, iconIndex) => (
+                  <T.Wrapper key={iconIndex}>
+                    <T.SkillIcon url={icon.path} />
+                    <T.Info>
+                      <p>{icon.name}</p>
+                    </T.Info>
+                  </T.Wrapper>
                 ))}
-            </T.SkillContainer>
+            </T.Container>
           ))}
       </T.Bottom>
     </S.Container>
