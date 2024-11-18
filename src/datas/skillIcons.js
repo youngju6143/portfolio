@@ -25,11 +25,11 @@ const skillIcons = [
   { path: Redux, name: "Redux" },
   { path: StyledComponents, name: "Styled-Components" },
   { path: TailwindCSS, name: "TailwindCSS" },
+  { path: Python, name: "Python" },
   { path: CPP, name: "C++" },
   { path: ExpressJS, name: "ExpressJS" },
   { path: MongoDB, name: "MongoDB" },
   { path: NodeJS, name: "NodeJS" },
-  { path: Python, name: "Python" },
 ];
 
 export default skillIcons;
