@@ -73,6 +73,8 @@ export const Infos = styled.div`
   align-items: flex-start;
   // border: 1px solid black;
 
+  gap: ${(props) => props.isProject && "4vh"};
+
   h1 {
     font-family: "GumiRomanceTTF", sans-serif;
     margin: 1% 0 1% 3%;
